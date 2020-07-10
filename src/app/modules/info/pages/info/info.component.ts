@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { CardService } from 'src/app/services/card.service';
 import { ICard } from 'src/app/interfaces/card.interface';
 import { Router, ActivatedRoute } from '@angular/router';
@@ -7,6 +7,7 @@ import { Router, ActivatedRoute } from '@angular/router';
   selector: 'app-info',
   templateUrl: './info.component.html',
   styleUrls: ['./info.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class InfoComponent implements OnInit {
   card: ICard;
