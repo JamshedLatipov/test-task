@@ -1,0 +1,31 @@
+.form {
+  margin: 0 auto;
+  background: gray;
+  max-width: 350px;
+  padding: 10px;
+  box-sizing: border-box;
+
+  input,
+  textarea {
+    width: 99%;
+    border: none;
+  }
+  input {
+    height: 30px;
+  }
+  textarea {
+    margin-top:10px;
+    height: 150px;
+  }
+  &__actions {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    &--save, &--delete {
+      width: 50%;
+    }
+    &--save {
+      background: white;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@import 'src/app/styles/page.scss';
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  &__card {
+    margin: 10px;
+    width: calc(33% - 20px);
+  }
+}

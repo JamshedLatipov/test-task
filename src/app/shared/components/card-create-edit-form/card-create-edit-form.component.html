@@ -1,0 +1,25 @@
+<div class="form">
+  <form [formGroup]="formGroup" (ngSubmit)="submit()">
+    <div>
+      <input placeholder="Enter title" formControlName="title" />
+    </div>
+    <div>
+      <textarea placeholder="Enter description" formControlName="description">
+      </textarea>
+    </div>
+
+    <div class="form__actions">
+      <button type="submit" mat-button class="form__actions--save">Save</button>
+
+      <button
+        *ngIf="card"
+        mat-button
+        type="button"
+        class="form__actions--delete"
+        (click)="onDelete()"
+      >
+        Delete
+      </button>
+    </div>
+  </form>
+</div>

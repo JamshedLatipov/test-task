@@ -1,0 +1,22 @@
+.card {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  &__title {
+    font-size: 20px;
+  }
+
+  &__description {
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+    &--favorite {
+    }
+    &--edit {
+    }
+  }
+}

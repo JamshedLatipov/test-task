@@ -1,0 +1,7 @@
+.border {
+  border: 1px solid lightgray;
+  &.dashed {
+    border: 1px dashed lightgray;
+  }
+}
+

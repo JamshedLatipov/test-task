@@ -1,0 +1,17 @@
+<div class="page">
+  <section class="title">
+    <h1>Cards list</h1>
+  </section>
+
+  <section class="cards">
+    <button [routerLink]="['/', 'create']" class="cards__card border dashed" mat-button>
+      <mat-icon>add</mat-icon>
+    </button>
+    <app-card
+      class="cards__card border"
+      (favoriteChange)="editCard($event)"
+      *ngFor="let card of list | async"
+      [card]="card"
+    ></app-card>
+  </section>
+</div>
